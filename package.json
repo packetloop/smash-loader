@@ -1,0 +1,33 @@
+{
+  "name": "smash-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader for Smash",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack test/all.js test/bundle.js --target node && mocha test/bundle.js && rm test/bundle.js"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "smash"
+  ],
+  "author": "Nik Butenko <nik@butenko.me> (http://butenko.me)",
+  "license": "MIT",
+  "dependencies": {
+    "loader-utils": "^0.2.6"
+  },
+  "peerDependencies": {
+    "smash": "0.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/packetloop/smash-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/packetloop/smash-loader/issues"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "webpack": "^1.5.3"
+  }
+}
