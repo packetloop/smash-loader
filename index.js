@@ -10,6 +10,10 @@ module.exports = function () {
   var file = loaderUtils.getRemainingRequest(this);
   var code = [];
 
+  if (this.cacheable) {
+    this.cacheable();
+  }
+
   smash([file])
     .on('data', function (text) {
       code.push(text);
